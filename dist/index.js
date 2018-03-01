@@ -197,7 +197,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(5),
   /* template */
-  __webpack_require__(15),
+  __webpack_require__(16),
   /* scopeId */
   null,
   /* cssModules */
@@ -443,7 +443,7 @@ var Component = {
       }
     },
     notifyClass: function notifyClass(item) {
-      return ['notification', this.classes, item.type];
+      return [this.classes || 'notification', item.type];
     },
     notifyWrapperStyle: function notifyWrapperStyle(item) {
       return this.isVA ? null : {
@@ -730,7 +730,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(4),
   /* template */
-  __webpack_require__(16),
+  __webpack_require__(15),
   /* scopeId */
   null,
   /* cssModules */
@@ -780,6 +780,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('transition-group', {
+    attrs: {
+      "name": _vm.name
+    }
+  }, [_vm._t("default")], 2)
+},staticRenderFns: []}
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "notifications",
     style: (_vm.styles)
@@ -826,18 +838,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('transition-group', {
-    attrs: {
-      "name": _vm.name
-    }
-  }, [_vm._t("default")], 2)
-},staticRenderFns: []}
-
-/***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -848,7 +848,7 @@ var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(18)("2901aeae", content, true);
+var update = __webpack_require__(18)("a1dd6636", content, true);
 
 /***/ }),
 /* 18 */
