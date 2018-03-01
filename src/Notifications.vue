@@ -259,8 +259,7 @@ const Component = {
 
     notifyClass (item) {
       return [
-        'notification',
-        this.classes,
+        this.classes || 'notification',
         item.type
       ]
     },
